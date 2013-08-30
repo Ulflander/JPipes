@@ -3,12 +3,35 @@ JPipes
 
 Java pattern for normal/threaded pipelines
 
+Current version: `0.1.0`
 
 #### Install
 
-Use Maven:
+Add this maven repo to your pom.xml:
 
+```
+	<repositories>
+        <repository>
+            <id>JPipes</id>
+            <url>https://raw.github.com/Ulflander/JPipes/master/snapshots</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
+    </repositories>
+```
 
+And this dependency:
+```
+    <dependencies>
+        <dependency>
+            <groupId>com.ulflander</groupId>
+            <artifactId>JPipes</artifactId>
+            <version>0.1.0</version>
+        </dependency>
+    </dependencies>
+```
 
 #### A normal pipeline with 3 pipes
 
@@ -36,4 +59,11 @@ Use Maven:
    > - (A) -              - (C) - - - (D2) - - - (E) - >
              \          /         \          /
                - (B2) -             - (D3) -
+```
+
+
+#### Deploy to github
+
+```
+$ mvn -DaltDeploymentRepository=snapshot-repo::default::file:snapshots clean deploy
 ```
