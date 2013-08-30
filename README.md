@@ -3,7 +3,14 @@ JPipes
 
 Java pattern for normal/threaded pipelines
 
-### A normal pipeline with 3 pipes
+
+#### Install
+
+Use Maven:
+
+
+
+#### A normal pipeline with 3 pipes
 
 ```
 
@@ -11,7 +18,7 @@ Java pattern for normal/threaded pipelines
 
 ```
 
-### A pipeline with 2 normal pipes and 2 threaded pipes
+#### A pipeline with 2 normal pipes and 2 threaded pipes
 
 ```
                - (B1) -
@@ -21,7 +28,7 @@ Java pattern for normal/threaded pipelines
                - (B2) -
 ```
 
-### A more complex one
+#### A more complex one
 
 ```
                - (B1) -             - (D1) -
